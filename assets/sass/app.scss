@@ -1,0 +1,13 @@
+// Import bulma variable overrides
+@import "theme/variables";
+
+// Import bulma
+@import "~bulma";
+
+
+// Import Family.scss
+@import "~family.scss";
+
+
+//import theme settings
+@import "theme/theme.scss"
