@@ -1,13 +1,19 @@
 // Import bulma variable overrides
 @import "theme/variables";
+@import "theme/fonts";
+@import "theme/mixins";
 
 // Import bulma
 @import "~bulma";
 
-
 // Import Family.scss
 @import "~family.scss";
 
+//fancy
+@import "~@fancyapps/fancybox/dist/jquery.fancybox";
+
+//Import Swiper
+@import "~swiper/dist/css/swiper";
 
 //import theme settings
-@import "theme/theme.scss"
+@import "theme/theme.scss";

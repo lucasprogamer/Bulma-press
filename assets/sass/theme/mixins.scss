@@ -1,0 +1,52 @@
+@mixin linear-gradient($from, $to) {
+    background: $to;
+    background: linear-gradient(90deg, $from 70%, $to 30%);
+}
+
+@mixin flip {
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: "FlipH";
+    filter: FlipH;
+}
+
+@mixin centered {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+/* iPhone */
+@media only screen and (width: 320px) and (device-width: 320px) and (device-height: 480px) and (orientation: landscape) {
+    body {
+        -webkit-transform: scale(0.667);
+        -webkit-transform-origin: top right;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 480px;
+    }
+}
+
+/* iPad */
+@media only screen and (width: 768px) and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+    body {
+        -webkit-transform: scale(0.75);
+        -webkit-transform-origin: top right;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 1024px;
+    }
+}
