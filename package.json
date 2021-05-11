@@ -20,6 +20,6 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.4.1",
     "jquery-mask-plugin": "^1.14.15",
-    "swiper": "^4.3.5"
+    "swiper": "^6.6.1"
   }
 }
