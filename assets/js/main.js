@@ -1,6 +1,6 @@
 
 import Swiper from 'swiper';
-import '@fancyapps/fancybox';
+
 
 
 
