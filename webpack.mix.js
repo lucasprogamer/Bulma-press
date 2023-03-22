@@ -17,6 +17,13 @@ mix.webpackConfig({
     devtool: 'inline-source-map',
 })
 
+mix.browserSync({
+    proxy: 'https://bulma-press.app', //your url ex. http://localhost
+    files: [
+        "assets/**/*",
+        "*"
+    ]
+})
 mix.options({
     processCssUrls: false,
 });
